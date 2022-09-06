@@ -458,7 +458,7 @@ func TestSecretSchemaTemplatesContainerRegistry(t *testing.T) {
 			},
 		},
 		{
-			TestName:   "minikube",
+			TestName:   "microk8s",
 			ObjectName: "tekton-container-registry-auth",
 			Property:   ".dockerconfigjson",
 			Format:     "json",
@@ -469,7 +469,7 @@ func TestSecretSchemaTemplatesContainerRegistry(t *testing.T) {
 						Registry: "",
 					},
 					GitServer:   giturl.GitHubURL,
-					Provider:    "minikube",
+					Provider:    "microk8s",
 					ProjectID:   "myproject",
 					ClusterName: "mycluster",
 				},
@@ -502,7 +502,7 @@ func TestSecretSchemaTemplatesBucketRepo(t *testing.T) {
 			Requirements: &config.RequirementsConfig{
 				Repository: "bucketrepo",
 				Cluster: config.ClusterConfig{
-					Provider:    "minikube",
+					Provider:    "microk8s",
 					ProjectID:   "myproject",
 					ClusterName: "mycluster",
 				},

@@ -29,7 +29,7 @@ jxRequirements:
     gitKind: github
     gitName: github
     gitServer: https://github.com
-    provider: minikube
+    provider: microk8s
   environments:
   - key: dev
     owner: mr-coveros

@@ -13,7 +13,7 @@ spec:
     gitKind: github
     gitName: github
     gitServer: https://github.com
-    provider: minikube
+    provider: microk8s
   environments:
   - key: dev
     owner: mr-coveros
@@ -21,8 +21,8 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: ""
-    kind: ingress
+    domain: "192.168.56.10.nip.io"
+    externalDNS: false
     namespaceSubDomain: -jx.
     tls:
       email: ""

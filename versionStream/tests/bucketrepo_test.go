@@ -67,7 +67,7 @@ func TestBucketRepoSecrets(t *testing.T) {
 				Requirements: &config.RequirementsConfig{
 					Repository: "bucketrepo",
 					Cluster: config.ClusterConfig{
-						Provider:    "minikube",
+						Provider:    "microk8s",
 						ProjectID:   "myproject",
 						ClusterName: "mycluster",
 					},
