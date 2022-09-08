@@ -35,13 +35,9 @@ jxRequirements:
     owner: mr-coveros
     repository: jx3-microk8s
   - key: staging
-    owner: mr-coveros
-    repository: jx3-microk8s
   - key: production
-    owner: mr-coveros
-    repository: jx3-microk8s
   ingress:
-    domain: 192.168.86.205.nip.io
+    domain: change.me
     kind: ingress
     namespaceSubDomain: -jx.
     tls:

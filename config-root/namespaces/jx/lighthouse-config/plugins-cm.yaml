@@ -8,14 +8,6 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - mr-coveros/jx3-microk8s
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - mr-coveros/jx3-microk8s
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
       - mr-coveros/jenkins-x-quickstart
       require_self_approval: true
     cat: {}
@@ -85,12 +77,6 @@ data:
       xl: 0
       xxl: 0
     triggers:
-    - repos:
-      - mr-coveros/jx3-microk8s
-      trusted_org: todo
-    - repos:
-      - mr-coveros/jx3-microk8s
-      trusted_org: todo
     - repos:
       - mr-coveros/jx3-microk8s
       trusted_org: todo

@@ -45,7 +45,7 @@ data:
         repos:
         - mr-coveros/jx3-microk8s
         - mr-coveros/jenkins-x-quickstart
-      target_url: http://lighthouse-jx.192.168.86.205.nip.io/merge/status
+      target_url: http://lighthouse-jx./merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
