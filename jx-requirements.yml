@@ -8,7 +8,7 @@ spec:
     chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts/
     clusterName: kind
     devEnvApprovers:
-    - todo
+    - mr-coveros
     environmentGitOwner: todo
     gitKind: github
     gitName: github
