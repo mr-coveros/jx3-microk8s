@@ -37,7 +37,7 @@ jxRequirements:
   - key: staging
   - key: production
   ingress:
-    domain: change.me
+    domain: jenkinsx.cluster.local
     kind: ingress
     namespaceSubDomain: -tekton-pipelines.
     tls:

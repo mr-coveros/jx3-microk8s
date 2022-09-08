@@ -15,7 +15,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: docker-registry-jx.change.me
+    - host: docker-registry-jx.jenkinsx.cluster.local
       http:
         paths:
           - path: /

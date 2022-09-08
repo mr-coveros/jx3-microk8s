@@ -21,7 +21,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: "jenkinsx.cluster.local"
+    domain: jenkinsx.cluster.local
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
