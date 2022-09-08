@@ -6,6 +6,18 @@ data:
       repos:
       - mr-coveros/jx3-microk8s
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - mr-coveros/jx3-microk8s
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - mr-coveros/jx3-microk8s
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - mr-coveros/jenkins-x-quickstart
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -16,6 +28,11 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      mr-coveros/jenkins-x-quickstart:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       mr-coveros/jx3-microk8s:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -26,6 +43,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      mr-coveros/jenkins-x-quickstart:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       mr-coveros/jx3-microk8s:
       - config-updater
       - approve
@@ -55,6 +88,17 @@ data:
     - repos:
       - mr-coveros/jx3-microk8s
       trusted_org: todo
+    - repos:
+      - mr-coveros/jx3-microk8s
+      trusted_org: todo
+    - repos:
+      - mr-coveros/jx3-microk8s
+      trusted_org: todo
+    - repos:
+      - mr-coveros/jenkins-x-quickstart
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null

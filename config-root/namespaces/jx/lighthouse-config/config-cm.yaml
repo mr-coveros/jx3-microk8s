@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        mr-coveros/jenkins-x-quickstart: true
         mr-coveros/jx3-microk8s: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +20,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        mr-coveros/jenkins-x-quickstart: merge
         mr-coveros/jx3-microk8s: merge
       queries:
       - labels:
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - mr-coveros/jx3-microk8s
+        - mr-coveros/jenkins-x-quickstart
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - mr-coveros/jx3-microk8s
+        - mr-coveros/jenkins-x-quickstart
       target_url: http://lighthouse-jx.192.168.86.205.nip.io/merge/status
 kind: ConfigMap
 metadata:

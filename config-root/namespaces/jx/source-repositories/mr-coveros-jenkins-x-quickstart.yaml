@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: mr-coveros
+    provider: github
+    repository: jenkins-x-quickstart
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: mr-coveros-jenkins-x-quickstart
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/mr-coveros/jenkins-x-quickstart.git
+  org: mr-coveros
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jenkins-x-quickstart
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/mr-coveros/jenkins-x-quickstart
