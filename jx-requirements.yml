@@ -16,16 +16,20 @@ spec:
     provider: minikube
   environments:
   - key: dev
+    owner: mr-coveros
+    repository: jx3-microk8s
   - key: staging
   - key: production
   ingress:
     domain: ""
-    externalDNS: false
+    kind: ingress
     namespaceSubDomain: -jx.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: mr-coveros
   repository: bucketrepo
   secretStorage: local
   vault: {}
