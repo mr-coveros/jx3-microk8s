@@ -11,6 +11,9 @@ metadata:
     meta.helm.sh/release-name: 'jxboot-helmfile-resources'
   namespace: jx
 spec:
+  source:
+    ref: "master"
+    url: https://github.com/mr-coveros/jx3-microk8s.git
   kind: Permanent
   label: Staging
   namespace: jx-staging
