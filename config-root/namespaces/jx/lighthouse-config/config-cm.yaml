@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - mr-coveros/jx3-microk8s
-      target_url: http://lighthouse-jx./merge/status
+      target_url: http://lighthouse-jx.192.168.86.205.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null

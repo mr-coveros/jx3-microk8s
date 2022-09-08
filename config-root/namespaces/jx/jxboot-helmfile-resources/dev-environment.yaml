@@ -28,7 +28,7 @@ spec:
     dockerRegistryOrg: ""
     envOrganisation: todo
     gitServer: https://github.com
-    kubeProvider: "minikube"
+    kubeProvider: "microk8s"
     pipelineUsername: "mr-coveros"
     pipelineUserEmail: "jenkins-x@googlegroups.com"
     prowConfig: Scheduler
